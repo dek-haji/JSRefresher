@@ -25,5 +25,5 @@ const createStudentComponent1 = (name, subject, info) => {
         <aside>${info}</aside>
     </div>`
 }
-createStudentComponent1("Dek", "Day cohort40", "in love of coding and NSS")
+createStudentComponent1("Dek", "Day cohort40", "in love of coding and NSS");
 
