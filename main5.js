@@ -56,7 +56,7 @@ allCars.forEach(car => {
 // ok now we using object.entries
 //This method returns an array, with the first item being the key name, and the second item being the value.
 allCars.forEach(car => {
-    for (const entries of Object.entries(car)) {
-        output.innerHTML += `<div>${entries}</div>`
+    for (const entry of Object.entries(car)) {
+        output.innerHTML += `<div>${entry[0]}: ${entry[1]}</div>`
     }
 })
