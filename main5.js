@@ -60,3 +60,24 @@ allCars.forEach(car => {
         output.innerHTML += `<div>${entry[0]}: ${entry[1]}</div>`
     }
 })
+
+const JuanRodriguezPatient = {
+    firstName: "Dek",
+    lastName: "Rodriguez",
+    dob: "12/13/1986",
+    address: "127.0.0.1",
+    gender: "M",
+    fullName: function () {
+        return `${this.firstName} ${this.lastName}`
+    },
+    age: function () {
+        const dob = new Date(this.dob)
+        const yearBirth = dob.getFullYear()
+        const now = new Date()
+        const yearNow = now.getFullYear()
+
+        return yearNow - yearBirth
+    }
+}
+console.log(JuanRodriguezPatient.age())
+console.log(JuanRodriguezPatient.fullName())
